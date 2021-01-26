@@ -1,11 +1,11 @@
 import React from 'react';
 import { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
-import createStore from '../state/store';
+import store from '../state/store';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <Provider store={createStore()}>
+    <Provider store={store}>
       <Component {...pageProps} />
     </Provider>
   );
